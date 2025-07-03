@@ -81,7 +81,7 @@ class AppState {
         ? await _sharedPreferences.remove('primary_color')
         : await _sharedPreferences.setInt(
             'primary_color',
-            color.value,
+            color.toARGB32(),
           );
     theme.value = (
       primaryColor: _sharedPreferences.themeColor,

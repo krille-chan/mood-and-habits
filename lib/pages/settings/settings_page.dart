@@ -79,7 +79,7 @@ class SettingsPage extends StatelessWidget {
                     child: Tooltip(
                       message: customColors[i] == null
                           ? context.l10n.system
-                          : '#${color.value.toRadixString(16).toUpperCase()}',
+                          : '#${color.toARGB32().toRadixString(16).toUpperCase()}',
                       child: InkWell(
                         borderRadius: BorderRadius.circular(32.0),
                         onTap: () => state.appState.setThemeColor(color),
@@ -91,8 +91,8 @@ class SettingsPage extends StatelessWidget {
                             width: colorPickerSize,
                             height: colorPickerSize,
                             child: state.appState.theme.value.primaryColor
-                                        ?.value ==
-                                    color.value
+                                        ?.toARGB32() ==
+                                    color.toARGB32()
                                 ? Center(
                                     child: Icon(
                                       Icons.check,

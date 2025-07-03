@@ -27,7 +27,6 @@ class AdaptiveDialogTextField extends StatelessWidget {
       case TargetPlatform.fuchsia:
       case TargetPlatform.linux:
       case TargetPlatform.windows:
-      default:
         return TextField(
           controller: controller,
           obscureText: obscureText,

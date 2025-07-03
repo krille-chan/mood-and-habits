@@ -33,7 +33,6 @@ class AdaptiveDialogButton extends StatelessWidget {
       case TargetPlatform.fuchsia:
       case TargetPlatform.linux:
       case TargetPlatform.windows:
-      default:
         return TextButton(
           onPressed: onPressed,
           child: Text(

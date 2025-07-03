@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:mood_n_habits/config/app_constants.dart';
 import 'package:mood_n_habits/config/theme.dart';
+import 'package:mood_n_habits/l10n/app_localizations.dart';
 import 'package:mood_n_habits/models/app_state.dart';
 
 class MoodAndHabitsApp extends StatelessWidget {
